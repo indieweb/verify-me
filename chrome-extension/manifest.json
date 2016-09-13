@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+	"name": "Verify Me",
+	"short_name": "Verify Me",
+	"description": "Check current page's rel=me links point back",
+	"version": "0.1.0",
+	"permissions": ["tabs"],
+	"content_scripts": [{
+		"all_frames": true,
+		"js": ["verify.js"],
+		"matches": ["<all_urls>"],
+		"run_at": "document_idle"
+	}],
+	"icons": {
+		"32": "icon-32.png",
+		"128": "icon.png"
+	}
+}
