@@ -18,7 +18,7 @@ Array.prototype.forEach.call( results, function(link) {
     // validate symmetric rels with request to /rel-me-links/
     if (relMeUrl.startsWith('http')) {
         var request = new XMLHttpRequest();
-        request.open('GET', '//indiewebify.me/rel-me-links/?url1='+encodeURIComponent(url)+'&url2='+encodeURIComponent(relMeUrl), true);
+        request.open('GET', '//indiewebify.me/rel-me-links-info/?url1='+encodeURIComponent(url)+'&url2='+encodeURIComponent(relMeUrl), true);
         request.onload = function() {
           if (request.status >= 200 && request.status < 400) {
             if (request.responseText === 'true') {

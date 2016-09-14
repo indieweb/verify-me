@@ -3,7 +3,7 @@
 	"name": "Verify Me",
 	"short_name": "Verify Me",
 	"description": "Check current page's rel=me links point back",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"permissions": ["tabs"],
 	"content_scripts": [{
 		"all_frames": true,
