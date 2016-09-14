@@ -3,3 +3,5 @@ _site/
 .jekyll-metadata
 .pem
 .DS_Store
+
+*.pem
