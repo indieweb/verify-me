@@ -11,6 +11,7 @@ var results = document.querySelectorAll('a[rel~="me"]'),
 if (canon[0]){
     url = canon[0].href;
 }
+url = url.split('#')[0]
 Array.prototype.forEach.call( results, function(link) {
     var relMeUrl = link.href,
         el = link;
@@ -18,7 +19,7 @@ Array.prototype.forEach.call( results, function(link) {
     // validate symmetric rels with request to /rel-me-links/
     if (relMeUrl.startsWith('http')) {
         var request = new XMLHttpRequest();
-        request.open('GET', window.location.protocol+'//indiewebify.me/rel-me-links-info/?url1='+encodeURIComponent(url)+'&url2='+encodeURIComponent(relMeUrl), true);
+        request.open('GET', 'https://indiewebify.me/rel-me-links-info/?url1='+encodeURIComponent(url)+'&url2='+encodeURIComponent(relMeUrl), true);
         request.onload = function() {
           if (request.status >= 200 && request.status < 400) {
             if (request.responseText === 'true') {
