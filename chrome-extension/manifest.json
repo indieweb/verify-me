@@ -8,6 +8,7 @@
 	"content_scripts": [{
 		"all_frames": true,
 		"js": ["verify.js"],
+		"css": ["balloons.css"],
 		"matches": ["<all_urls>"],
 		"run_at": "document_idle"
 	}],

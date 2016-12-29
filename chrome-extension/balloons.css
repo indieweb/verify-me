@@ -1,0 +1,117 @@
+.balloon {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding-top: 30px;
+  position: absolute;
+  top: 0px;
+  display: flex;
+  justify-content: space-around;
+}
+.balloon > div {
+  width: 104px;
+  height: 140px;
+  background: rgba(182, 15, 97, 0.9);
+  border-radius: 0;
+  border-radius: 80% 80% 80% 80%;
+  margin: 0 auto;
+  padding: 10px;
+  box-shadow: inset 17px 7px 10px rgba(182, 15, 97, 0.9);
+  -webkit-transform-origin: bottom center;
+}
+.balloon > div:nth-child(1) {
+  background: rgba(182, 15, 97, 0.9);
+  box-shadow: inset 10px 10px 10px rgba(135, 11, 72, 0.9);
+  animation: balloon1 7s ease-in-out infinite;
+}
+.balloon > div:nth-child(1):before {
+  color: rgba(182, 15, 97, 0.9);
+}
+.balloon > div:nth-child(2) {
+  background: rgba(242, 112, 45, 0.9);
+  box-shadow: inset 10px 10px 10px rgba(222, 85, 14, 0.9);
+  animation: balloon2 5s ease-in-out infinite;
+}
+.balloon > div:nth-child(2):before {
+  color: rgba(242, 112, 45, 0.9);
+}
+.balloon > div:nth-child(3) {
+  background: rgba(45, 181, 167, 0.9);
+  box-shadow: inset 10px 10px 10px rgba(35, 140, 129, 0.9);
+  animation: balloon4 8s ease-in-out infinite;
+}
+.balloon > div:nth-child(3):before {
+  color: rgba(45, 181, 167, 0.9);
+}
+.balloon > div:nth-child(4) {
+  background: rgba(190, 61, 244, 0.9);
+  box-shadow: inset 10px 10px 10px rgba(173, 14, 240, 0.9);
+  animation: balloon1 11s ease-in-out infinite;
+}
+.balloon > div:nth-child(4):before {
+  color: rgba(190, 61, 244, 0.9);
+}
+.balloon > div:nth-child(5) {
+  background: rgba(180, 224, 67, 0.9);
+  box-shadow: inset 10px 10px 10px rgba(158, 206, 34, 0.9);
+  animation: balloon3 6s ease-in-out infinite;
+}
+.balloon > div:nth-child(5):before {
+  color: rgba(180, 224, 67, 0.9);
+}
+.balloon > div:nth-child(6) {
+  background: rgba(242, 194, 58, 0.9);
+  box-shadow: inset 10px 10px 10px rgba(234, 177, 15, 0.9);
+  animation: balloon2 3s ease-in-out infinite;
+}
+.balloon > div:nth-child(6):before {
+  color: rgba(242, 194, 58, 0.9);
+}
+.balloon > div:before {
+  color: rgba(182, 15, 97, 0.9);
+  position: absolute;
+  bottom: -11px;
+  left: 52px;
+  content: "▲";
+  font-size: 1em;
+}
+.balloon span {
+  font-size: 4.8em;
+  color: white;
+  position: relative;
+  top: 30px;
+  left: 50%;
+  margin-left: -27px;
+}
+@keyframes balloon1 {
+  0% {
+    transform: translateY(2000%) rotate(-6deg);
+  }
+  100% {
+    transform: translateY(-200%) rotate(8deg);
+  }
+}
+@keyframes balloon2 {
+  0% {
+    transform: translateY(2000%) rotate(6deg);
+  }
+  100% {
+    transform: translateY(-200%) rotate(-8deg);
+  }
+}
+@keyframes balloon3 {
+  0% {
+    transform: translate(0, 2000%) rotate(6deg);
+  }
+  100% {
+    transform: translate(-20px, -200%) rotate(-8deg);
+  }
+}
+@keyframes balloon4 {
+  0% {
+    transform: translate(10px, 2000%) rotate(-8deg);
+  }
+  100% {
+    transform: translate(-15px, -200%) rotate(10deg);
+  }
+}
