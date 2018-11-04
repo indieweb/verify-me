@@ -2,18 +2,24 @@
 	"manifest_version": 2,
 	"name": "Verify Me",
 	"short_name": "Verify Me",
-	"description": "Check current page's rel=me links point back",
-	"version": "0.2.2",
-	"permissions": ["tabs"],
-	"content_scripts": [{
-		"all_frames": true,
-		"js": ["verify.js"],
-		"css": ["balloons.css"],
-		"matches": ["<all_urls>"],
-		"run_at": "document_idle"
-	}],
-	"icons": {
-		"32": "icon-32.png",
-		"128": "icon.png"
-	}
+	"description": "Add a button to the browser to check rel=me links point back",
+	"version": "0.3.1",
+    "background": {
+    "scripts": ["background.js"]
+    },
+    "permissions": [
+    "http://*/",
+    "https://*/"
+    ],
+    "browser_action": {
+        "default_title": "Check rel-me links on this page.",
+        "default_icon": {
+          "19": "icon-32.png",
+          "38": "icon-32.png"
+        }
+    },
+    "icons": {
+        "32": "icon-32.png",
+        "128": "icon.png"
+    }
 }
