@@ -43,7 +43,7 @@ if (bday[0]) {
   var bdaystring = bday[0].getAttribute('datetime');
   var bdate = new Date(bdaystring);
   if(now.getMonth() == bdate.getMonth() // 0-indexed, 11 is december
-    && now.getDate() == bdate.getDate()+1) {
+    && now.getDate() == bdate.getDate()) {
     setTimeout(vme_show_balloons, 1000);
   }
 }
