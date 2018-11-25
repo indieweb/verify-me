@@ -3,7 +3,7 @@
     "name": "Verify Me",
     "short_name": "Verify Me",
     "description": "Add a button to the browser to check rel=me links point back",
-    "version": "0.3.1",
+    "version": "0.3.2",
     "background": {
         "scripts": ["background.js"]
     },
