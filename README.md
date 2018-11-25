@@ -8,6 +8,7 @@ doing [distributed verification][2].
 ## Download
 
 * [Chrome Web Store](https://chrome.google.com/webstore/detail/verify-me/nnefkajddpfponfnmaflddipljfdlcjb)
+* [Firefox Add-ons (AMO)](https://addons.mozilla.org/en-US/firefox/addon/verify-me/)
 
 ## Privacy policy
 No user information is stored or sent remotely, so there are no longer
